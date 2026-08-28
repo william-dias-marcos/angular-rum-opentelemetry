@@ -1,0 +1,201 @@
+# ============================================
+
+# Node / npm
+
+# ============================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.npm/
+.yarn/
+.pnpm-store/
+
+# Optional local npm configuration
+
+.npmrc
+
+# ============================================
+
+# Angular
+
+# ============================================
+
+.angular/
+dist/
+out-tsc/
+tmp/
+coverage/
+
+# Angular cache
+
+.cache/
+
+# ============================================
+
+# Environment / secrets
+
+# ============================================
+
+.env
+.env.*
+!.env.example
+
+# Local configuration
+
+*.local
+
+# Certificates / private keys
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ============================================
+
+# IDE / Editors
+
+# ============================================
+
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============================================
+
+# OS
+
+# ============================================
+
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# ============================================
+
+# Logs
+
+# ============================================
+
+logs/
+*.log
+
+# ============================================
+
+# Test / Coverage
+
+# ============================================
+
+coverage/
+.nyc_output/
+
+# ============================================
+
+# Build / Temporary files
+
+# ============================================
+
+build/
+dist/
+.tmp/
+temp/
+.cache/
+
+# ============================================
+
+# Docker
+
+# ============================================
+
+docker-compose.override.yml
+
+# Docker local data
+
+.docker/
+docker-data/
+
+# Local volumes / databases
+
+prometheus-data/
+grafana-data/
+
+# ============================================
+
+# Grafana
+
+# ============================================
+
+grafana/data/
+grafana/logs/
+grafana/plugins/
+
+# ============================================
+
+# Prometheus
+
+# ============================================
+
+prometheus/data/
+
+# ============================================
+
+# OpenTelemetry
+
+# ============================================
+
+otel-collector/data/
+otel-collector/logs/
+
+# ============================================
+
+# Generated files
+
+# ============================================
+
+*.generated.*
+*.generated.json
+
+# ============================================
+
+# Local development
+
+# ============================================
+
+.local/
+.localhost/
+
+# Temporary editor/runtime files
+
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================
+
+# Dependency caches
+
+# ============================================
+
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# ============================================
+
+# Backup files
+
+# ============================================
+
+*.bak
+*.backup
+*.old
