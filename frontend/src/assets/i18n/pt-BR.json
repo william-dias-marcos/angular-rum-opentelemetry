@@ -1,0 +1,33 @@
+{
+  "APP": {
+    "TITLE": "GitHub Explorer",
+    "SUBTITLE": "Encontre perfis públicos e seus repositórios recentes no GitHub.",
+    "THEME_TOGGLE": "Alternar tema",
+    "THEME": "Tema",
+    "THEME_LIGHT": "Claro",
+    "THEME_DARK": "Escuro",
+    "LOCALE": "Idioma"
+  },
+  "GITHUB": {
+    "OVERLINE": "Explorador de perfis",
+    "USERNAME_LABEL": "Nome de usuário do GitHub",
+    "PLACEHOLDER": "Digite um nome de usuário",
+    "SEARCH_BUTTON": "Buscar",
+    "LOADING": "Buscando…",
+    "AVATAR_ALT": "Avatar de",
+    "REPOSITORIES": "Repositórios",
+    "FOLLOWERS": "Seguidores",
+    "FOLLOWING": "Seguindo",
+    "RECENT_REPOSITORIES": "Repositórios recentes",
+    "NO_DESCRIPTION": "Sem descrição disponível.",
+    "NO_LANGUAGE": "Não informado",
+    "NO_REPOSITORIES": "Nenhum repositório público encontrado.",
+    "ERRORS": {
+      "not_found": "Usuário não encontrado. Verifique o nome e tente novamente.",
+      "rate_limit": "O limite de requisições do GitHub foi atingido. Tente novamente em alguns minutos.",
+      "network": "Não foi possível conectar ao GitHub. Verifique sua conexão.",
+      "server": "O GitHub está indisponível no momento. Tente novamente mais tarde.",
+      "unexpected": "Não foi possível concluir a busca. Tente novamente."
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "APP": {
+    "TITLE": "GitHub Explorer",
+    "SUBTITLE": "Find public profiles and their recent GitHub repositories.",
+    "THEME_TOGGLE": "Toggle theme",
+    "THEME": "Theme",
+    "THEME_LIGHT": "Light",
+    "THEME_DARK": "Dark",
+    "LOCALE": "Language"
+  },
+  "GITHUB": {
+    "OVERLINE": "Profile explorer",
+    "USERNAME_LABEL": "GitHub username",
+    "PLACEHOLDER": "Enter a username",
+    "SEARCH_BUTTON": "Search",
+    "LOADING": "Searching…",
+    "AVATAR_ALT": "Avatar of",
+    "REPOSITORIES": "Repositories",
+    "FOLLOWERS": "Followers",
+    "FOLLOWING": "Following",
+    "RECENT_REPOSITORIES": "Recent repositories",
+    "NO_DESCRIPTION": "No description available.",
+    "NO_LANGUAGE": "Not specified",
+    "NO_REPOSITORIES": "No public repositories found.",
+    "ERRORS": {
+      "not_found": "User not found. Check the name and try again.",
+      "rate_limit": "The GitHub request limit was reached. Try again in a few minutes.",
+      "network": "Could not connect to GitHub. Check your connection.",
+      "server": "GitHub is unavailable right now. Try again later.",
+      "unexpected": "The search could not be completed. Please try again."
+    }
+  }
+}

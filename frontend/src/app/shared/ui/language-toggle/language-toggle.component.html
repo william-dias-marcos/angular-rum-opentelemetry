@@ -1,0 +1,5 @@
+<fieldset class="flex items-center px-1 py-1">
+  <legend class="sr-only">{{ 'APP.LOCALE' | translate }}</legend>
+  <button type="button" (click)="setLocale('pt-BR')" [attr.aria-pressed]="locale() === 'pt-BR'" class="px-2 py-1.5 transition focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500" [class.bg-slate-950]="locale() === 'pt-BR'" [class.text-white]="locale() === 'pt-BR'" [class.dark:bg-cyan-300]="locale() === 'pt-BR'" [class.dark:text-slate-950]="locale() === 'pt-BR'" [class.text-slate-500]="locale() !== 'pt-BR'">PT</button>
+  <button type="button" (click)="setLocale('en-US')" [attr.aria-pressed]="locale() === 'en-US'" class="px-2 py-1.5 transition focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500" [class.bg-slate-950]="locale() === 'en-US'" [class.text-white]="locale() === 'en-US'" [class.dark:bg-cyan-300]="locale() === 'en-US'" [class.dark:text-slate-950]="locale() === 'en-US'" [class.text-slate-500]="locale() !== 'en-US'">EN</button>
+</fieldset>
