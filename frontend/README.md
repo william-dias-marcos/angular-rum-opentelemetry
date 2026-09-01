@@ -44,6 +44,20 @@ To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use th
 ng test
 ```
 
+## Deploy to Netlify
+
+The GitHub Actions workflow in `.github/workflows/deploy-netlify.yml` deploys the
+production build to Netlify only after the unit tests pass. It runs exclusively
+for pushes to the `main` branch.
+
+Before the first deployment, configure these repository secrets in GitHub:
+
+- `NETLIFY_AUTH_TOKEN`: a Netlify personal access token with permission to deploy the site.
+- `NETLIFY_SITE_ID`: the identifier of the target Netlify site.
+
+The workflow builds the application and deploys `dist/frontend/browser` as the
+production site.
+
 ## Running end-to-end tests
 
 For end-to-end (e2e) testing, run:
