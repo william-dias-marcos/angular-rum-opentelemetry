@@ -1,11 +1,13 @@
 import { DOCUMENT } from '@angular/common';
 import { Injectable, computed, inject, signal } from '@angular/core';
+import { OtelRumService } from './otel-rum.service';
 
 export type Theme = 'light' | 'dark';
 
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
   private readonly document = inject(DOCUMENT);
+  private readonly rum = inject(OtelRumService);
   private readonly currentTheme = signal<Theme>(this.getInitialTheme());
   readonly theme = computed(() => this.currentTheme());
 
@@ -14,9 +16,11 @@ export class ThemeService {
   toggle(): void { this.setTheme(this.currentTheme() === 'dark' ? 'light' : 'dark'); }
 
   setTheme(theme: Theme): void {
+    if (theme === this.currentTheme()) return;
     this.currentTheme.set(theme);
     localStorage.setItem('app_theme', theme);
     this.apply(theme);
+    this.rum.recordThemeSwitch(theme);
   }
 
   private getInitialTheme(): Theme {
